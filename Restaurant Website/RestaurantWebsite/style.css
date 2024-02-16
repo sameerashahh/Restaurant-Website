@@ -1,0 +1,303 @@
+/* Navigation Styles */
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+header {
+    position: relative;
+    background-image: url('dishes.jpg');
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.header-content h1 {
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    
+}
+
+
+header h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+main {
+    padding: 30px;
+}
+
+.home-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Nunito', sans-serif;
+}
+
+.home-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home-section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.testimonial {
+    margin-top: 20px;
+    padding-left: 10px;
+    border-left: 3px solid #4CAF50;
+}
+
+.testimonial p {
+    color: #555;
+    font-style: italic;
+}
+
+#review-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#review-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#review-form input[type="text"],
+#review-form input[type="email"],
+#review-form select,
+#review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#review-form textarea {
+    resize: vertical;
+}
+
+#review-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#review-form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.home-section {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+#gallery {
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+#testimonials {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+#reviews {
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.menu-section {
+    margin-top: 20px;
+}
+
+.menu-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+
+#cart {
+    margin-top: 20px;
+}
+
+#cart h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+.menu-section,
+#cart {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#checkout-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+#checkout-btn:hover {
+    background-color: #45a049; /* Darker Green */
+}

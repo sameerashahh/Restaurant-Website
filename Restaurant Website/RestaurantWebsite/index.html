@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>RamenHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="menu-link">Menu</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>Ramen Hub</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="home-section" id="about-us">
+            <h2>About Us</h2>
+            <p>Welcome to Ramen Hub, your ultimate destination for authentic Asian cuisine! At Ramen Hub, we take pride in serving delicious dishes inspired by the rich culinary traditions of Japan, China, Korea, and beyond. From steaming bowls of savory ramen to mouthwatering sushi rolls, our menu offers a tantalizing array of flavors and textures that will transport your taste buds to the bustling streets of Asia.</p>
+            <p>Our commitment to quality ingredients and meticulous preparation ensures that every dish we serve is a true culinary masterpiece. Whether you're a seasoned foodie or a casual diner, our friendly staff is dedicated to providing you with an unforgettable dining experience that's as delightful as it is delicious.</p>
+            <p>Come and join us at Ramen Hub, where every meal is a journey of discovery and every bite is a celebration of flavor. We look forward to welcoming you to our restaurant!</p>
+        </div>
+
+        <div class="home-section" id="gallery">
+            <h2>Gallery</h2>
+            <div class="image-container">
+                <img src="sushi.jpg" alt="Image 1">
+                <img src="ramen.jpg" alt="Image 2">
+                <img src="dumplings.jpg" alt="Image 3">
+            </div>
+        </div>
+
+        <div class="home-section" id="testimonials">
+            <h2>Testimonials</h2>
+            <div class="testimonial">
+                <p>John - 4 Stars</p>
+                <p>"Amazing food and excellent service! I highly recommend Interactive Restaurant to anyone looking for a fantastic dining experience."</p>
+            </div>
+            <div class="testimonial">
+                <p>Jane - 5 Stars</p>
+                <p>"The ambiance here is so cozy, and the food is simply outstanding. I'll definitely be coming back!"</p>
+            </div>
+        </div>
+        
+        <div class="home-section" id="reviews">
+            <h2>Leave a Review</h2>
+            <form id="review-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    <div class="clearfix">
+        <div class="menu-section" id="menu-section">
+            <h2>Menu</h2>
+            <div id="menu-items">
+                <div class="menu-item">
+                    <h3>Ramen</h3>
+                    <p>$10.99</p>
+                    <button class="add-to-cart-btn" data-name="Ramen" data-price="10.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Sushi Roll</h3>
+                    <p>$8.99</p>
+                    <button class="add-to-cart-btn" data-name="Sushi Roll" data-price="8.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>General Tso's Chicken</h3>
+                    <p>$11.99</p>
+                    <button class="add-to-cart-btn" data-name="General Tso's Chicken" data-price="11.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Bibimbap</h3>
+                    <p>$13.99</p>
+                    <button class="add-to-cart-btn" data-name="Bibimbap" data-price="13.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Dim Sum Platter</h3>
+                    <p>$15.99</p>
+                    <button class="add-to-cart-btn" data-name="Dim Sum Platter" data-price="15.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Pho</h3>
+                    <p>$9.99</p>
+                    <button class="add-to-cart-btn" data-name="Pho" data-price="9.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Green Tea</h3>
+                    <p>$2.99</p>
+                    <button class="add-to-cart-btn" data-name="Green Tea" data-price="2.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Iced Tea</h3>
+                    <p>$3.99</p>
+                    <button class="add-to-cart-btn" data-name="Iced Tea" data-price="3.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Coke</h3>
+                    <p>$2.99</p>
+                    <button class="add-to-cart-btn" data-name="Coke" data-price="4.99">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Water</h3>
+                    <p>$1.99</p>
+                    <button class="add-to-cart-btn" data-name="Water" data-price="1.99">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div id="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Opening Hours:</p>
+            <p>Monday - Friday: 11:00 AM - 9:00 PM<br>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+            <p>Phone: 123-456-7890<br>Email: info@RamenHub.com</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

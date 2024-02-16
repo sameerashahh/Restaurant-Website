@@ -55,7 +55,7 @@ Interact with the website by browsing through the menu items, adding them to you
 
 ## Credits
 
-This project was created by Sameera Rajesh Shah.
+This project was created by Sameera Shah.
 
 ## Contact Information
 
